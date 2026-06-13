@@ -1,4 +1,4 @@
-const api = "http://localhost:1337/api";
+const api = import.meta.env.VITE_API_URL;
 
 export async function getBlogs(): Promise<any> {
   const res = await fetch(`${api}/blogs?populate=*`);
