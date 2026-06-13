@@ -10,6 +10,20 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
+import { getBlogs, getProjects } from "./services/Api.js";
+
+export async function clientLoader() {
+  const [blogs, projects] = await Promise.all([getBlogs(), getProjects()]);
+
+  return { blogs, projects };
+}
+
+export function shouldRevalidate() {
+  return false;
+}
+
+export const clientLoaderHydrate = true;
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
