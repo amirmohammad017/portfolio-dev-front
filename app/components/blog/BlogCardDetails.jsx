@@ -47,7 +47,7 @@ const BlogCardDetails = () => {
           className="object-cover rounded-lg"
           src={
             image?.url
-              ? `http://localhost:1337${image.url}`
+              ? `${image.url}`
               : "/public/images/no-image.png"
           }
           alt={title}
