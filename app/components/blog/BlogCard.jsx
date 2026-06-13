@@ -18,7 +18,7 @@ const BlogCard = ({ data }) => {
             className=" object-cover w-full h-full"
             src={
               image?.url
-                ? `http://localhost:1337${image.url}`
+                ? `${image.url}`
                 : "/public/images/no-image.png"
             }
             alt={title}

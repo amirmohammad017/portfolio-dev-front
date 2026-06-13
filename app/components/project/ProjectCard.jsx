@@ -8,7 +8,7 @@ const ProjectCard = ({ data }) => {
           className="w-full h-full object-cover rounded-lg"
           src={
             image?.formats?.small?.url 
-              ? `http://localhost:1337${image.formats.small.url}`
+              ? `${image.formats.small.url}`
               : "/public/images/no-image.png"
           }
           alt={title}
