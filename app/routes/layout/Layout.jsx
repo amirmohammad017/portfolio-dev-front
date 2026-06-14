@@ -52,7 +52,7 @@ const Layout = () => {
       {/* Main Content */}
       <main className="text-white grow p-4 pt-24 min-h-full relative">
         {/* Hero Background */}
-        <div className="fixed -z-10 top-0 left-0 right-0 h-full">
+        <div className="fixed -z-10 top-0 left-0 right-0 h-dvh">
           <img
             className="w-full h-full object-cover"
             src="/images/hero-bg.jpg"
