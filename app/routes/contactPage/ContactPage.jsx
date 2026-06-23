@@ -1,4 +1,10 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaInstagram,
+  FaTelegramPlane,
+} from "react-icons/fa";
 import SocialLink from "../../components/btn/SocialLink.jsx";
 import Input from "../../components/ui/Input.jsx";
 import TextArea from "../../components/ui/TextArea.jsx";
@@ -10,17 +16,31 @@ export default function Contact() {
       icon: FaGithub,
       label: "GitHub",
       hoverClass:
-        "hover:text-red-500 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]",
+        "hover:text-purple-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.25)]",
     },
     {
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://instagram.com/amirmohammad017",
+      icon: FaInstagram,
+      label: "Instagram",
+      hoverClass:
+        "hover:text-[#E1306C] hover:shadow-[0_0_20px_rgba(236,72,153,0.25)]",
+    },
+    {
+      href: "https://linkedin.com/in/amirmohammad-dev",
       icon: FaLinkedin,
       label: "LinkedIn",
       hoverClass:
         "hover:text-[#0A66C2] hover:shadow-[0_0_20px_rgba(10,102,194,0.25)]",
     },
     {
-      href: "mailto:amirm.1774@email.com",
+      href: "https://t.me/AMiRmohammaD017",
+      icon: FaTelegramPlane,
+      label: "Telegram",
+      hoverClass:
+        "hover:text-blue-400 hover:shadow-[0_0_20px_rgba(56,189,248,0.25)]",
+    },
+    {
+      href: "mailto:amirm.1774@gmail.com",
       icon: FaEnvelope,
       label: "Email",
       hoverClass:
@@ -48,7 +68,7 @@ export default function Contact() {
               href={link.href}
               icon={link.icon}
               label={link.label}
-              size={56}
+              size={50}
               iconSize={24}
               hoverClass={link.hoverClass}
             />
