@@ -18,12 +18,12 @@ const AboutPage = () => {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-10 flex items-center justify-center"
+      className="min-h-screen py-10 flex items-center justify-center"
     >
       <div className="max-w-4xl text-center text-white">
         {/* description */}
         <div
-          className="bg-black/50 backdrop-blur-md p-8 mb-6 rounded-2xl 
+          className="bg-black/50 backdrop-blur-md px-6 p-8 mb-6 rounded-2xl 
         border border-white/10"
         >
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
