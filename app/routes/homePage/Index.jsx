@@ -48,8 +48,8 @@ export default function Index() {
 
       {/* Section 2: Featured Projects */}
       <section id="projects">
-        <div className="flex justify-between items-end mb-4">
-          <h2 className="text-3xl font-bold text-white">Featured Projects</h2>
+        <div className="flex justify-between items-start mb-4">
+          <h2 className="text-xl md:text-3xl font-bold text-white">Featured Projects</h2>
           <NavLink className={BUTTON_CLASS} to="/project">
             View All
           </NavLink>
@@ -66,7 +66,7 @@ export default function Index() {
       {/* Section 3: Latest Blogs */}
       <section id="blogs">
         <div className="flex justify-between items-start mb-10">
-          <h2 className="text-3xl font-bold text-white">Latest Blogs</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-white">Latest Blogs</h2>
           <NavLink className={BUTTON_CLASS} to="/blog">
             Read More
           </NavLink>
